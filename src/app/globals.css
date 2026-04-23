@@ -1,15 +1,29 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Source_Han_Serif_CN";
+  src: url("/font/SourceHanSerifCN-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Han Serif CN";
+  src: url("/font/SourceHanSerifCN-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair-display);
+  --font-cjk: var(--font-lianmeng-heiti);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +33,36 @@
   }
 }
 
+@theme {
+  --font-display: var(--font-playfair-display);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+}
+
+.container {
+  box-sizing: border-box;
+  padding-inline: 16px;
+}
+
+@media (width >= 48rem) {
+  .container {
+    padding-inline: 24px;
+  }
+}
+
+@media (width >= 96rem) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.amap-marker-label {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important; /* 有时默认 padding 也会影响间距 */
+    box-shadow: none !important; /* 去掉可能存在的阴影 */
 }
