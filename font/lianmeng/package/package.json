@@ -1,0 +1,23 @@
+{
+  "name": "@fontpkg/lianmengqiyilushuaizhengruiheiti",
+  "version": "1.000.0",
+  "description": "Font package for 联盟起艺卢帅正锐黑体",
+  "keywords": [
+    "font",
+    "fonts",
+    "lianmengqiyilushuaizhengruiheiti",
+    "联盟起艺卢帅正锐黑体"
+  ],
+  "license": "SEE LICENSE IN README.md",
+  "files": [
+    "联盟起艺卢帅正锐黑体.ttf"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/fontpkg"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
