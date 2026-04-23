@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Img from "@/components/Img";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 
@@ -47,7 +47,7 @@ export function Navbar({ items }: NavbarProps) {
       >
 
         <header className="flex container items-center justify-between py-5">
-          <Image
+          <Img
             src="/icon/school-icon2.png"
             alt="南京河西外国语学校国际部 Logo"
             width={285}

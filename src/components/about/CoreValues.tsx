@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Img from '@/components/Img';
 import basePath from '@/lib/basePath';
 const icons = {
   clock: (
-    <Image
+    <Img
       src="/icon/FRAME_95.png"
       alt="clock"
       width={80}
@@ -12,7 +12,7 @@ const icons = {
     />
   ),
   globe: (
-    <Image
+    <Img
       src="/icon/FRAME_97.png"
       alt="globe" width={80}
       height={80}
@@ -21,7 +21,7 @@ const icons = {
     />
   ),
   star: (
-    <Image
+    <Img
       src="/icon/FRAME_99.png"
       alt="star" width={80}
       height={80}
@@ -64,7 +64,7 @@ export function CoreValues() {
         backgroundImage: `url('${basePath}/core-values-bg.png')`,
       }}>
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center mb-20 mt-16 md:mt-0">
-        <Image
+        <Img
           src="/icon/Group_108.png"
           alt="globe" 
           width={23}

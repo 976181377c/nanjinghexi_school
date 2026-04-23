@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Img from '@/components/Img';
 import { GreenTitle } from './GreenTitle';
 import basePath from '@/lib/basePath';
 
@@ -37,8 +37,8 @@ export function Overview({
             <div className="relative mt-6 w-full h-full lg:mt-0">
               {/* 主图容器 */}
               <div className="relative w-full h-full aspect-682/600 rounded-2xl overflow-hidden shadow-sm">
-                {/* 提示：如果是真实项目，建议换成 next/image 的 <Image fill src="..." /> */}
-                <Image
+                {/* 提示：如果是真实项目，建议换成 next/image 的 <Img fill src="..." /> */}
+                <Img
                   src={imageSrc}
                   alt={imageAlt}
                   fill
@@ -47,7 +47,7 @@ export function Overview({
                 />
               </div>
               <div className="absolute -top-3 left-0 z-10 flex rounded-[14px] bg-white p-3 [box-shadow:-16px_4px_24px_rgba(0,_0,_0,_0.03)] lg:-top-8 lg:-left-8 lg:rounded-[16px] lg:px-6 lg:py-4">
-                <Image
+                <Img
                   src="/icon/FRAME_130.png"
                   alt="创校年份"
                   width={48}
@@ -114,7 +114,7 @@ export function Overview({
                   <div
                     key={index}
                     className="bg-[#f2f8f6] rounded-xl p-3 md:p-4 flex items-center gap-3 transition-transform hover:-translate-y-1">
-                    <Image
+                    <Img
                       src={item.icon}
                       alt={item.label}
                       width={36}

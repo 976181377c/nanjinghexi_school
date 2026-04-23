@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Img from '@/components/Img';
 import { GreenTitle } from './GreenTitle';
 import { JSX } from 'react';
 
@@ -42,7 +42,7 @@ export function AdvantageGrid({
 
           <div className="relative my-[42px_32px] rounded-xl bg-[linear-gradient(135deg,rgba(1,129,109,1)_0%,rgba(47,88,79,1)_100%)]">
             <span className="absolute left-2 top-2 font-serif text-[100px] leading-none text-white/15 pointer-events-none">
-              <Image
+              <Img
                 src="/icon/Text-Pseudo__before.png"
                 alt="globe"
                 width={38}
@@ -56,7 +56,7 @@ export function AdvantageGrid({
               融合中外教育优势，传承南外理念，打造高品质国际教育平台，培养具有中国灵魂、世界胸怀的国际化复合型人才。
             </div>
             <span className="absolute right-2 top-2 font-serif text-[100px] leading-none text-white/15 pointer-events-none">
-              <Image
+              <Img
                 src="/icon/Text-Pseudo__before-1.png"
                 alt="globe"
                 width={38}
@@ -83,7 +83,7 @@ export function AdvantageGrid({
 
         <div className="grid gap-4 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="overflow-hidden rounded-[2rem] shadow-xl">
-            <Image
+            <Img
               src={primaryImage.src}
               alt={primaryImage.alt}
               width={350}
@@ -98,7 +98,7 @@ export function AdvantageGrid({
               <div
                 key={image.alt}
                 className={`overflow-hidden rounded-[1.5rem] shadow-lg`}>
-                <Image
+                <Img
                   src={image.src}
                   alt={image.alt}
                   width={350}

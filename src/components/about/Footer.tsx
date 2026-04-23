@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Img from '@/components/Img';
 
 export function Footer() {
   return (
@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8">
         {/* 左侧区域：Logo、标语与二维码 */}
         <div className="lg:col-span-5 flex flex-col">
-          <Image
+          <Img
             src="/icon/school-icon.png"
             alt="南京河西外国语学校国际部 Logo"
             width={326}
@@ -22,7 +22,7 @@ export function Footer() {
             <div className="flex flex-col items-center gap-2">
               <div className="flex items-center justify-center bg-[rgba(255,_255,_255,_0.2)]">
                 <div className="size-[120px] sm:size-[150px]  m-2 sm:m-[9px] bg-gray-200 border border-gray-300 flex items-center justify-center text-gray-400 text-xs">
-                  <Image
+                  <Img
                     src="/img/qr_code.png"
                     alt="qrcdoe"
                     width={120}
@@ -39,7 +39,7 @@ export function Footer() {
             <div className="flex flex-col items-center gap-2">
               <div className="flex items-center justify-center bg-[rgba(255,_255,_255,_0.2)]">
                 <div className="size-[120px] sm:size-[150px]  m-2 sm:m-[9px] bg-gray-200 border border-gray-300 flex items-center justify-center text-gray-400 text-xs">
-                  <Image
+                  <Img
                     src="/img/qr_code.png"
                     alt="qrcdoe"
                     width={120}

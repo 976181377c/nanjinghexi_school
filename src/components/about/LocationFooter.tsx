@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Img from '@/components/Img';
 import AMapComponent from '../AMapComponent';
 
 type LocationFooterProps = {
@@ -14,7 +14,7 @@ type LocationFooterProps = {
 const infoList = [
   {
     icon: (
-      <Image
+      <Img
         src="/icon/FRAME_115.png"
         alt="globe"
         width={48}
@@ -28,7 +28,7 @@ const infoList = [
   },
   {
     icon: (
-      <Image
+      <Img
         src="/icon/FRAME_117.png"
         alt="globe"
         width={48}
@@ -42,7 +42,7 @@ const infoList = [
   },
   {
     icon: (
-      <Image
+      <Img
         src="/icon/FRAME_119.png"
         alt="globe"
         width={48}

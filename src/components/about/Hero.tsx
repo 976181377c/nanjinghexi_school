@@ -4,14 +4,14 @@ type HeroProps = {
   description: string;
 };
 
-import Image from 'next/image';
+import Img from '@/components/Img';
 
 export function Hero({ eyebrow, title, description }: HeroProps) {
   return (
     <section
       id="hero"
       className="relative isolate h-[550px] overflow-hidden text-white">
-      <Image
+      <Img
         src="/main-bg.png"
         alt="南京河西学校校园主图"
         fill
