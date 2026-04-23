@@ -1,3 +1,5 @@
+import basePath from '@/lib/basePath';
+
 type StatItem = {
   value: string;
   label: string;
@@ -13,7 +15,7 @@ export function StatsBar({ items }: StatsBarProps) {
     <section
       aria-labelledby="stats-heading"
       className="py-10 flex justify-center bg-[#0F4B3A] bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/stats-bar-bg.png')" }}>
+      style={{ backgroundImage: `url('${basePath}/stats-bar-bg.png')` }}>
       <div className="container max-w-7xl">
         <h2 id="stats-heading" className="sr-only">
           学校数据速览

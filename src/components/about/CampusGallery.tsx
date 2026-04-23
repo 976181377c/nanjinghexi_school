@@ -1,29 +1,25 @@
 import React from 'react';
 import { GreenTitle } from './GreenTitle';
+import basePath from '@/lib/basePath';
 
-// 模拟校园风采的卡片数据
 const campusFeatures = [
   {
     id: 1,
     title: '校园全景',
     desc: '现代化的校园建筑与优美的绿化环境',
-    // 请替换为你实际的图片路径
-    bgImage:
-      '/img/image_2128.png',
+    bgImage: `${basePath}/img/image_2128.png`,
   },
   {
     id: 2,
     title: '多层图书馆',
     desc: '配备先进教学设备，营造国际化学习氛围',
-    bgImage:
-      '/img/image_2129.png',
+    bgImage: `${basePath}/img/image_2129.png`,
   },
   {
     id: 3,
     title: '学生活动',
     desc: '丰富多彩的校园活动，促进全面发展',
-    bgImage:
-      '/img/image_2130.png',
+    bgImage: `${basePath}/img/image_2130.png`,
   },
 ];
 

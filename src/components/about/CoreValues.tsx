@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import basePath from '@/lib/basePath';
 const icons = {
   clock: (
     <Image
@@ -60,7 +61,7 @@ export function CoreValues() {
     <div
       className="relative bg-cover bg-center px-[8]  md:px-16 py-[120px] text-center text-white"
       style={{
-        backgroundImage: "url('/core-values-bg.png')",
+        backgroundImage: `url('${basePath}/core-values-bg.png')`,
       }}>
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center mb-20 mt-16 md:mt-0">
         <Image

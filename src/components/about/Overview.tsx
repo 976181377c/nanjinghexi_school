@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { GreenTitle } from './GreenTitle';
+import basePath from '@/lib/basePath';
 
 type OverviewProps = {
   title: string;
@@ -20,7 +21,7 @@ export function Overview({
     <section
       id="overview"
       className="py-16 sm:py-20 lg:py-24 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/overview-bg.png')" }}>
+      style={{ backgroundImage: `url('${basePath}/overview-bg.png')` }}>
       <div className="container mx-auto flex w-full max-w-7xl flex-col items-center px-4">
         <GreenTitle text="OVERVIEW" />
         <p className="mt-4 text-center font-['Source_Han_Serif_CN'] text-[rgba(9,_84,_86,_1)] font-bold text-[48px] leading-[130%]">
